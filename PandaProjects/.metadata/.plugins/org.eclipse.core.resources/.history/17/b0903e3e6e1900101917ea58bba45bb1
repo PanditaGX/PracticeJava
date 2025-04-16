@@ -1,0 +1,23 @@
+package Panda;
+
+public class Hora {
+
+	public static void main (String[]args) {
+		
+		int hora, minutos, segundos;
+		
+		hora=17;
+		minutos=07;
+		segundos=50;
+		
+		int CuentaSegundos = (segundos * 1) + (minutos * 60) + (hora * 3600);
+		int SegundosRestantesDia = 86400 - CuentaSegundos;
+		int PorcentajeDiaTranscurrido = (86400 * CuentaSegundos) / 100;
+		
+		
+		System.out.println ("Segundos transcurridos desde la medianoche: " + CuentaSegundos);
+		System.out.println ("Segundos restantes que le faltan al dia: " + SegundosRestantesDia);
+		System.out.println ("Porcentaje del dia transcurrido: " + PorcentajeDiaTranscurrido);
+	}
+	
+}

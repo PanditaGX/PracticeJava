@@ -1,0 +1,19 @@
+package Panda;
+
+public class Hora {
+
+	public static void main (String[]args) {
+		
+		int hora, minutos, segundos;
+		
+		hora=17;
+		minutos=07;
+		segundos=50;
+		
+		int CuentaSegundos = (segundos * 1) + (60 * minutos) + (60 * hora);
+		
+		System.out.println (CuentaSegundos);
+		
+	}
+	
+}
